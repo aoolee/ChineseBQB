@@ -1,4 +1,4 @@
-## Chinese sticker pack / 中国的表情包
+## aoolee_Chinese sticker pack / 中国的表情包
 
 ## 表情包目录(共收录3029张表情包)Emoticon package directory (commonly included 3029 emoticon pack)
 
