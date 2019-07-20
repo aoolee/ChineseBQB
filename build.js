@@ -34,13 +34,15 @@ function create_bqb_md(){
                     }
                     console.log("top::", top);
                     // 构建内容
-                    let content = `--- 
+                    let content = `---
+
 title: ${md_dir_list[i]}]
 top: ${top}
 tags:
 - ${md_dir_list[i]}
 categories:
 - ${md_dir_list[i]}
+
 ---
                     
 ------
