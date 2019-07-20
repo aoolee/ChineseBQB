@@ -36,7 +36,7 @@ function create_bqb_md(){
                     // 构建内容
                     let content = `---
 
-title: ${md_dir_list[i]}]
+title: ${md_dir_list[i]}
 top: ${top}
 tags:
 - ${md_dir_list[i]}
