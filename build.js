@@ -9,19 +9,21 @@ const repo_name = "ChineseBQB";
 
 
 // 根据BQB结尾的文件夹自动生成模板文件
-function create_bqb_md(){
-    let file_list = fs.readdirSync(path.join(__dirname, "./"));
-    let md_dir_list = [];
-    file_list.map((file_name_value, file_name_index)=>{
-        if(file_name_value.endsWith("BQB")){
-            md_dir_list.push(file_name_value);
-        }
-    });
-    console.log("md_dir_list::", md_dir_list);
-    // 如果对应的md文件已经存在则略过, 如果不存在,则创建一个
+async function create_bqb_md(){
 
-    for (let i = 0; i<md_dir_list.length; i++){
-        let tmp_md_path = "./source/_posts/"+md_dir_list[i]+".md";
+    return new Promise((resolve, reject)=>{
+        let file_list = fs.readdirSync(path.join(__dirname, "./"));
+        let md_dir_list = [];
+        file_list.map((file_name_value, file_name_index)=>{
+            if(file_name_value.endsWith("BQB")){
+                md_dir_list.push(file_name_value);
+            }
+        });
+        console.log("md_dir_list::", md_dir_list);
+        // 如果对应的md文件已经存在则略过, 如果不存在,则创建一个
+
+        for (let i = 0; i<md_dir_list.length; i++){
+            let tmp_md_path = "./source/_posts/"+md_dir_list[i]+".md";
             fs.access(tmp_md_path, function(err){
                 if(err){
 
@@ -55,7 +57,7 @@ categories:
                     if(i === md_dir_list.length-1){
                         console.log("md文件已初始化完成");
 
-                        return md_dir_list;
+                        resolve();
 
                     }
 
@@ -63,13 +65,16 @@ categories:
                     console.log(tmp_md_path, "已经存在! 无需创建");
                     if(i === md_dir_list.length-1){
                         console.log("md文件已初始化完成");
-                        return md_dir_list;
+                        resolve();
                     }
                 }
             });
 
 
-    }
+        }
+
+    });
+
 
 
 
@@ -205,7 +210,7 @@ class ReadmeContents{
 async function main(){
 
     // 初始化md文件
-    create_bqb_md();
+    await create_bqb_md();
 
     let md_name_list = get_bqb_md_name_list();
 

@@ -12,3 +12,7 @@ categories:
 ------
                    
 <!-- more -->
+
+![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/101HU_海南大学BQB/0.gif)
+下载地址:[https://raw.githubusercontent.com/aoolee/ChineseBQB/master/101HU_海南大学BQB/0.gif](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/101HU_海南大学BQB/0.gif)
+
