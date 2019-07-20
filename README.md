@@ -43,9 +43,7 @@
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/038Jacky_张学友BQB/0.jpg /> | [038Jacky_张学友BQB(已收录8张)](https://aoolee.github.io/ChineseBQB/038Jacky_张学友BQB/) |
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/039YaoMing_表情包三巨头-姚明BQB/0.jpg /> | [039YaoMing_表情包三巨头-姚明BQB(已收录9张)](https://aoolee.github.io/ChineseBQB/039YaoMing_表情包三巨头-姚明BQB/) |
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/040HanazawaKana_表情包三巨头-花泽香菜BQB/0.jpg /> | [040HanazawaKana_表情包三巨头-花泽香菜BQB(已收录3张)](https://aoolee.github.io/ChineseBQB/040HanazawaKana_表情包三巨头-花泽香菜BQB/) |
-| <img height='100px' style='height:100px;' src= /> | [040HanazawaKana表情包三巨头_花泽香菜BQB(已收录0张)](https://aoolee.github.io/ChineseBQB/040HanazawaKana表情包三巨头_花泽香菜BQB/) |
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/041ChenguoCui_表情包三巨头-崔成国BQB/0.jpg /> | [041ChenguoCui_表情包三巨头-崔成国BQB(已收录7张)](https://aoolee.github.io/ChineseBQB/041ChenguoCui_表情包三巨头-崔成国BQB/) |
-| <img height='100px' style='height:100px;' src= /> | [041ChenguoCui表情包三巨头_崔成国BQB(已收录0张)](https://aoolee.github.io/ChineseBQB/041ChenguoCui表情包三巨头_崔成国BQB/) |
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/042HanZhang_张翰BQB/0.jpg /> | [042HanZhang_张翰BQB(已收录8张)](https://aoolee.github.io/ChineseBQB/042HanZhang_张翰BQB/) |
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/043Altman_奥特曼BQB/0.jpg /> | [043Altman_奥特曼BQB(已收录7张)](https://aoolee.github.io/ChineseBQB/043Altman_奥特曼BQB/) |
 | <img height='100px' style='height:100px;' src=https://raw.githubusercontent.com/aoolee/ChineseBQB/master/044YouLe_魔仙王子游乐BQB/0.jpg /> | [044YouLe_魔仙王子游乐BQB(已收录16张)](https://aoolee.github.io/ChineseBQB/044YouLe_魔仙王子游乐BQB/) |
