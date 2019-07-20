@@ -220,7 +220,7 @@ class ReadmeContents{
 
         let now_date = moment(new Date()).format("YYYY-MM-DD");
 
-        let now_date_desc = `> 数据生成时间: ${now_date}${"\n"}`;
+        let now_date_desc = `> 数据生成时间: ${now_date}${"\n"}${"\n"}`;
 
 
         // 拼接
