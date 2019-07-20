@@ -1,5 +1,4 @@
 ---
-
 title: 斗图之王BQB
 top: 0
 tags:
@@ -8,19 +7,19 @@ categories:
 - 斗图之王BQB
 
 ---
-                    
-------
-                   
-<!-- more -->
 
-![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0 2.gif)
-下载地址:[https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0 2.gif](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0 2.gif)
+------
+
+<!-- more -->
 
 ![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0.gif)
 下载地址:[https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0.gif](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0.gif)
 
 ![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0.jpg)
 下载地址:[https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0.jpg](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/0.jpg)
+
+![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/02.gif)
+下载地址:[https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/02.gif](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/02.gif)
 
 ![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/2018-7-09-39 拷贝.gif)
 下载地址:[https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/2018-7-09-39 拷贝.gif](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/斗图之王BQB/2018-7-09-39 拷贝.gif)

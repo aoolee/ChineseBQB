@@ -1,5 +1,4 @@
 ---
-
 title: 100UCAS_中国科学院BQB
 top: 900
 tags:
@@ -8,9 +7,9 @@ categories:
 - 100UCAS_中国科学院BQB
 
 ---
-                    
+
 ------
-                   
+
 <!-- more -->
 
 ![](https://raw.githubusercontent.com/aoolee/ChineseBQB/master/100UCAS_中国科学院BQB/0.jpg)

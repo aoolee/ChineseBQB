@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-const axios = require('axios');
+const moment = require('moment');
 
 
 // 可以配置
 const user_name = "aoolee";
 const repo_name = "ChineseBQB";
-
+const N = "\n";
 
 // 根据BQB结尾的文件夹自动生成模板文件
 async function create_bqb_md(){
@@ -36,21 +36,20 @@ async function create_bqb_md(){
                     }
                     console.log("top::", top);
                     // 构建内容
-                    let content = `---
-
-title: ${md_dir_list[i]}
-top: ${top}
-tags:
-- ${md_dir_list[i]}
-categories:
-- ${md_dir_list[i]}
-
----
-                    
-------
-                   
-<!-- more -->
-`;
+                    let content = `---${
+                    "\n"}title: ${md_dir_list[i]}${
+                    "\n"}top: ${top}${
+                    "\n"}tags:${
+                    "\n"}- ${md_dir_list[i]}${
+                    "\n"}categories:${
+                    "\n"}- ${md_dir_list[i]}${
+                    "\n"}${
+                    "\n"}---${
+                    "\n"}${
+                    "\n"}------${
+                    "\n"}${
+                    "\n"}<!-- more -->${
+                    "\n"}`;
                     // 去创建文件
                     fs.writeFileSync(tmp_md_path, content);
                     console.log(tmp_md_path, "创建完成");
@@ -169,6 +168,8 @@ class ReadmeContents{
         };
         this.push_readme_contents_info = this.push_readme_contents_info.bind(this);
         this.get_readme_contents_info = this.get_readme_contents_info.bind(this);
+        this.create_readme_content_md = this.create_readme_content_md.bind(this);
+        this.update_readme = this.update_readme.bind(this);
     }
 
     // 为目录数组增加元素
@@ -181,15 +182,63 @@ class ReadmeContents{
     get_readme_contents_info(){
         return this.state.readme_contents_info;
     }
+
     create_readme_content_md(){
+        // 统计所有图片的数量
+        let all_images_number = 0;
+        for(let i = 0; i<this.state.readme_contents_info.length; i++){
+            all_images_number += this.state.readme_contents_info[i]["images_number"];
+        }
+
+        // 定义标题
+
+        let title =  `表情包目录(共收录${all_images_number}张表情包)Emoticon package directory (commonly included ${all_images_number} emoticon pack)`;
+
+        // 定义标题行
+
+        let title_row = `${
+            "\n"}| Example(示例)  |  链接(Entrance link)  | ${
+            "\n"}| :---: | :---: |${
+            "\n"}`;
+
+        // 定义单行数据  图片样式/链接样式
+        let all_row_data = "";
+        let tmp_dir_name = "";
+
+        for(let n = 0; n<this.state.readme_contents_info.length; n++){
+            let dir_name = [...(this.state.readme_contents_info[n].readme_contents_info_href.split("/"))].reverse()[1];
+            console.log(dir_name);
+            let data_row = `| <img height='100px' style='height:100px;' src=${this.state.readme_contents_info[n].readme_contents_info_img} /> | [${dir_name}(已收录${this.state.readme_contents_info[n].images_number}张)](${this.state.readme_contents_info[n].readme_contents_info_href}) |${"\n"}`;
+
+            all_row_data+=data_row;
 
 
+        }
 
+
+        // 生成数据生成时间
+
+        let now_date = moment(new Date()).format("YYYY-MM-DD");
+
+        let now_date_desc = `> 数据生成时间: ${now_date}${"\n"}`;
+
+
+        // 拼接
+
+        let all_table_data = title+title_row+all_row_data+now_date_desc;
+
+
+        // 返回
+
+        console.log("all_table_data::", all_table_data);
+
+        return all_table_data;
 
     }
 
     // 更新readme信息
     async update_readme(){
+
         // 获取README中需要被替换的部分
         let readme_content = fs.readFileSync("./README.md").toString();
         let start_index = readme_content.indexOf("表情包目录");
@@ -198,10 +247,18 @@ class ReadmeContents{
 
         // 生成新的内容
 
-        let new_content = "";
+
+        // 获取生成的数据
+        let new_content = this.create_readme_content_md();
 
         // 替换内容
-        readme_content.replace(old_content, new_content);
+        readme_content = readme_content.replace(old_content, new_content);
+
+
+
+        await fs.writeFileSync("./README.md", readme_content);
+
+        console.log("README生成成功");
 
     }
 }
@@ -257,8 +314,11 @@ async function main(){
 
 
         readme_contents_obj.push_readme_contents_info(readme_contents_info_obj);
-        console.log("加之后::", readme_contents_obj.get_readme_contents_info());
 
+        if(md_name_index === md_name_list.length-1){
+            readme_contents_obj.update_readme();
+
+        }
 
 
     });
